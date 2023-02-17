@@ -88,8 +88,8 @@ impl AdcCommonCcr {
 impl AdcCommon {
     /// Enable and reset [`ADC_COMMON`](pac::ADC_COMMON) peripheral.
     pub fn new(adc_common: pac::ADC_COMMON, ahb: &mut AHB2) -> Self {
-        <pac::ADC_COMMON>::enable(ahb);
-        <pac::ADC_COMMON>::reset(ahb);
+        // <pac::ADC_COMMON>::enable(ahb);
+        // <pac::ADC_COMMON>::reset(ahb);
 
         drop(adc_common);
 

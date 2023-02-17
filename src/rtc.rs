@@ -294,7 +294,7 @@ impl Rtc {
                 #[cfg(any(
                     feature = "stm32l4r5"
                 ))]
-                    let mut alrmar = rtc.alrmar;
+                    let mut alrmar = &rtc.alrmar;
 
                 alrmar.modify(|_, w| unsafe {
                     w.dt()
@@ -355,7 +355,7 @@ impl Rtc {
                 #[cfg(any(
                     feature = "stm32l4r5"
                 ))]
-                    let mut alrmbr = rtc.alrmbr;
+                    let mut alrmbr = &rtc.alrmbr;
 
                 alrmbr.modify(|_, w| unsafe {
                     w.dt()

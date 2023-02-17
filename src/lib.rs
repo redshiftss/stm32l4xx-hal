@@ -160,7 +160,7 @@ pub mod pwr;
     feature = "stm32l4r9",
     feature = "stm32l4s9",
 )))]
-pub mod qspi;
+// pub mod qspi;
 pub mod rcc;
 pub mod rng;
 pub mod rtc;
