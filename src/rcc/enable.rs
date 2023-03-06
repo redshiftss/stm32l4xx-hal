@@ -143,8 +143,8 @@ bus! {
 #[cfg(not(any(
     // feature = "stm32l4p5",
     // feature = "stm32l4q5",
-    feature = "stm32l4r5",
-    feature = "stm32l4s5",
+    // feature = "stm32l4r5",
+    // feature = "stm32l4s5",
     // feature = "stm32l4r7",
     // feature = "stm32l4s7",
     feature = "stm32l4r9",
@@ -153,11 +153,11 @@ bus! {
 bus! {
     ADC_COMMON => (AHB2, adcen, adcfssmen, adcrst), // 13
 
-    LCD => (APB1R1, lcden, lcdsmen, lcdrst), // 9
+    // LTCD => (APB1R1, lcden, lcdsmen, lcdrst), // 9
 
-    SWPMI1 => (APB1R2, swpmi1en, swpmi1smen, swpmi1rst), // 2
+    // SWPMI1 => (APB1R2, swpmi1en, swpmi1smen, swpmi1rst), // 2
 
-    FIREWALL => (APB2, firewallen,,), // 7
+    // FIREWALL => (APB2, firewallen,,), // 7
 }
 
 // L4+
@@ -173,7 +173,6 @@ bus! {
 ))]
 bus! {
     ADC1 => (AHB2, adcen, adcfssmen, adcrst), // 13
-
     FIREWALL => (APB2, fwen,,), // 7
     LTCD => (APB2, ltdcen, ltdcsmen, ltdcrst), // 26
 }
